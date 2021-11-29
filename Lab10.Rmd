@@ -1,0 +1,53 @@
+---
+title: "Lab10"
+author: "Yutian Fang"
+date: "11/29/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(usethis)
+
+library(beepr)
+library(praise)
+library(cowsay)
+library(paletteer)
+library(sf)
+
+```
+
+## beepr::beep()
+
+Use 'beep()' to give yourself an audio alert.
+
+## for loop + beep
+
+```{r, eval = FALSE}
+for (i in rev(seq(1:9999))) {
+  print(paste(i, "bottles of beer on the wall"))
+}
+
+beep(4)
+ 
+```
+
+## praise is nice
+
+```{r}
+praise("${EXCLAMATION}!!! This code works ${adverb_manner}!")
+
+praise("Holy ${creating}, Batman - this code is ${adjective}!")
+```
+
+## cowsay:: say to have characters say something
+
+```{r}
+say ("I love tacos!", by = "shark")
+```
+
+## usethis for everything
+
